@@ -5,7 +5,7 @@ function Home() {
   return (
     <Box>
       <Typography color='white' component={"h1"}  variant='h3'>
-        Home
+        Homework
       </Typography>
     </Box>
   )
