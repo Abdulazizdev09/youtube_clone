@@ -1,12 +1,11 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import VideoCards from '../VideoCards/VideoCards'
 
 function Home() {
   return (
     <Box>
-      <Typography color='white' component={"h1"}  variant='h3'>
-        Homework
-      </Typography>
+      <VideoCards />
     </Box>
   )
 }

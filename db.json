@@ -1,29 +1,124 @@
 {
-    "posts": [
+    "videos": [
         {
-            "id": "1",
-            "title": "a title",
-            "views": 100
+            "id": 1,
+            "title": "Intro to Machine Learning",
+            "channel": "AI Academy",
+            "views": "120K views",
+            "time": "3 days ago",
+            "thumbnail": "https://media.geeksforgeeks.org/wp-content/uploads/20250522132238780028/introduction_to_machine_learning_1.webp"
         },
         {
-            "id": "2",
-            "title": "another title",
-            "views": 200
-        }
-    ],
-    "comments": [
-        {   
-            "id": "1",
-            "text": "a comment about post 1",
-            "postId": "1"
+            "id": 2,
+            "title": "Build Modern UI with Flutter",
+            "channel": "MobileCraft",
+            "views": "85K views",
+            "time": "5 days ago",
+            "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/1*cALcoJD59iD-hzy0vQWVkQ.jpeg"
         },
         {
-            "id": "2",
-            "text": "another comment about post 1",
-            "postId": "1"
+            "id": 3,
+            "title": "Python Crash Course in 1 Hour",
+            "channel": "Code World",
+            "views": "500K views",
+            "time": "1 week ago",
+            "thumbnail": "https://i.ytimg.com/vi/y7YVPH0Ycf8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAuESKayPyoK5Gck2uPyR4fqyq7fA"
+        },
+        {
+            "id": 4,
+            "title": "Mastering GraphQL Basics",
+            "channel": "API Hub",
+            "views": "45K views",
+            "time": "4 days ago",
+            "thumbnail": "https://escape.tech/blog/content/images/2022/06/learning_roadmap.png"
+        },
+        {
+            "id": 5,
+            "title": "Building Dark Mode in Next.js",
+            "channel": "Next Devs",
+            "views": "30K views",
+            "time": "2 days ago",
+            "thumbnail": "https://webtech-note.com/_next/image?url=%2Fimages%2Fposts%2Fhow-to-implement-light-dark-mode-css-vars-next-js%2Fthumb.png&w=3840&q=75"
+        },
+        {
+            "id": 6,
+            "title": "Netflix Clone with React & Firebase",
+            "channel": "Clone Factory",
+            "views": "100K views",
+            "time": "6 days ago",
+            "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4nn3b6fb8nfba1ypi6nf.png"
+        },
+        {
+            "id": 7,
+            "title": "Personal Blog with Astro",
+            "channel": "Frontend Studio",
+            "views": "77K views",
+            "time": "3 weeks ago",
+            "thumbnail": "https://themefisher.com/blog/astro-blog-templates.webp"
+        },
+        {
+            "id": 8,
+            "title": "Mastering Flexbox Layouts",
+            "channel": "CSS Tricks",
+            "views": "62K views",
+            "time": "1 week ago",
+            "thumbnail": "https://atyantik.com/wp-content/uploads/2025/03/flexbox-vs-grid.jpg"
+        },
+        {
+            "id": 9,
+            "title": "Smooth Animations with GSAP",
+            "channel": "Motion Hub",
+            "views": "23K views",
+            "time": "2 days ago",
+            "thumbnail": "https://miro.medium.com/1*yMfgYOYSHNv155LgzzHx8Q.jpeg"
+        },
+        {
+            "id": 10,
+            "title": "Best Node.js Frameworks in 2025",
+            "channel": "Dev Picks",
+            "views": "130K views",
+            "time": "1 month ago",
+            "thumbnail": "https://ares.decipherzone.com/blog-manager/uploads/ckeditor_Top_8_Backend_Frameworks_for_web_development%20(1).png"
+        },
+        {
+            "id": 11,
+            "title": "Recoil vs Zustand State Management",
+            "channel": "State Masters",
+            "views": "19K views",
+            "time": "4 hours ago",
+            "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*e6U_PwMurdljJVvo_QdBmA.png"
+        },
+        {
+            "id": 12,
+            "title": "Fetching Data with Fetch API",
+            "channel": "Web APIs",
+            "views": "58K views",
+            "time": "2 weeks ago",
+            "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/1*8hsBLfp9VMGuKvXyX71FKg.jpeg"
+        },
+        {
+            "id": 13,
+            "title": "Top Web Dev Trends 2025",
+            "channel": "Future Tech",
+            "views": "90K views",
+            "time": "3 weeks ago",
+            "thumbnail": "https://deftsoft.com/blog/wp-content/uploads/2024/11/Future-of-Web-Development-Trends-to-Watch-in-2025.png"
+        },
+        {
+            "id": 14,
+            "title": "Troubleshooting React Apps",
+            "channel": "Bug Fixers",
+            "views": "21K views",
+            "time": "6 days ago",
+            "thumbnail": "https://cdn.prod.website-files.com/622fa4d65a5fab0c3465af07/627938c3cb4f1195a4b81bda_react-js-problems-ssr.png"
+        },
+        {
+            "id": 15,
+            "title": "Host Websites on Netlify",
+            "channel": "Deploy Hub",
+            "views": "40K views",
+            "time": "1 day ago",
+            "thumbnail": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ffl6ecw3v59h0u3iiynpa.PNG"
         }
-    ],
-    "profile": {
-        "name": "typicode"
-    }
+    ]
 }
