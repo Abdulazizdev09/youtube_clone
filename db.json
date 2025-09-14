@@ -89,7 +89,16 @@
       "liked": true,
       "time": "6 days ago",
       "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4nn3b6fb8nfba1ypi6nf.png",
-      "comments": []
+      "comments": [
+        {
+          "id": 1757883359698,
+          "text": "hello"
+        },
+        {
+          "id": 1757883364826,
+          "text": "good"
+        }
+      ]
     },
     {
       "id": "7",

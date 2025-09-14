@@ -12,6 +12,7 @@ function VideoPage() {
     const [subscribed, setSubscribed] = useState(false)
     const [comments, setComments] = useState([])
     const [newComment, setNewComment] = useState("")
+    const [error, setError] = useState("")   
 
     useEffect(() => {
         axios.get(`http://localhost:4000/videos/${id}`)
@@ -68,7 +69,7 @@ function VideoPage() {
 
     if (error) return <p className="text-red-500 text-lg">{error}</p>
     if (!video || !channel) return <p className="text-white">Loading...</p>
-    
+
     return (
         <Box sx={{ width: "100%", paddingTop: "63px", color: "white" }}>
             <div className='w-[900px]  '>
