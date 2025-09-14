@@ -4,9 +4,7 @@ import VideoCards from '../VideoCards/VideoCards'
 
 function Home() {
   return (
-    <Box>
-      <VideoCards />
-    </Box>
+    <VideoCards />
   )
 }
 

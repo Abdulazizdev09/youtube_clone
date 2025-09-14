@@ -7,7 +7,6 @@ import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
 import CssBaseline from '@mui/material/CssBaseline';
-import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -18,11 +17,12 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { AccessTime, History, Home, MusicNoteOutlined, SportsEsportsOutlined, Subscriptions, SurroundSoundOutlined, TagOutlined, ThumbUpOffAlt, VideoLibrary, Whatshot } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 const menu = [
     { icon: <Home />, title: 'Home', path: "/" },
     { icon: <Whatshot />, title: 'Shorts', path: "/shorts" },
-    { icon: <Subscriptions />, title: 'Subscriptions', path: "/subcriptions" }
+    { icon: <Subscriptions />, title: 'Subscriptions', path: "/subscriptions" }
 ]
 const you = [
     { icon: <History />, title: 'History', path: "/history" },
@@ -183,6 +183,8 @@ export default function Sidebar({ children }) {
                     {menu.map((item, index) => (
                         <ListItem key={item.title} disablePadding sx={{ display: 'block' }}>
                             <ListItemButton
+                                component={Link}
+                                to={item.path}
                                 sx={[
                                     {
                                         minHeight: 48,
@@ -336,7 +338,6 @@ export default function Sidebar({ children }) {
                 </List>
             </Drawer>
             <Box component="main" sx={{ flexGrow: 1, p: 3 }} className='bg-black '>
-                <DrawerHeader />
                 {children}
             </Box>
         </Box>
