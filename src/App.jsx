@@ -5,18 +5,46 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NotFound from './components/NotFound/NotFound'
 import VideoPage from './components/VideoPage/VideoPage'
 import SubscribedChannels from './components/ChannelList/ChannelList'
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary'
 
 function App() {
   return (
     <BrowserRouter>
-      <Sidebar>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/video/:id' element={<VideoPage />} />
-          <Route path='*' element={<NotFound />} />
-          <Route path='/subscriptions' element={<SubscribedChannels />} />
-        </Routes>
-      </Sidebar>
+      <ErrorBoundary>
+
+        <Sidebar>
+          <Routes>
+            <Route path='/'
+              element={
+                <ErrorBoundary>
+                  <Home />
+                </ErrorBoundary>
+
+              } />
+            <Route path='/video/:id'
+              element={
+                <ErrorBoundary>
+                  <VideoPage />
+                </ErrorBoundary>
+
+              } />
+            <Route path='*'
+              element={
+                <ErrorBoundary>
+                  <NotFound />
+                </ErrorBoundary>
+
+              } />
+            <Route path='/subscriptions'
+              element={
+                <ErrorBoundary>
+                  <SubscribedChannels />
+                </ErrorBoundary>
+
+              } />
+          </Routes>
+        </Sidebar>
+      </ErrorBoundary>
     </BrowserRouter>
 
   )

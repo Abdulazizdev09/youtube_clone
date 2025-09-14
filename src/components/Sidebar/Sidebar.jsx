@@ -18,6 +18,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { AccessTime, History, Home, MusicNoteOutlined, SportsEsportsOutlined, Subscriptions, SurroundSoundOutlined, TagOutlined, ThumbUpOffAlt, VideoLibrary, Whatshot } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 
 const menu = [
     { icon: <Home />, title: 'Home', path: "/" },
@@ -159,7 +160,9 @@ export default function Sidebar({ children }) {
                         <MenuIcon />
                     </IconButton>
                     <Box sx={{ width: "100%" }}>
-                        <Header />
+                        <ErrorBoundary>
+                            <Header />
+                        </ErrorBoundary>
                     </Box>
                 </Toolbar>
             </AppBar>

@@ -6,7 +6,7 @@
       "channelId": 1,
       "views": "120K",
       "likes": 342,
-      "liked": false,
+      "liked": true,
       "time": "3 days ago",
       "thumbnail": "https://media.geeksforgeeks.org/wp-content/uploads/20250522132238780028/introduction_to_machine_learning_1.webp",
       "comments": [
@@ -15,6 +15,10 @@
           "text": "Really helped me understand basics 🚀"
         },
         {
+          "text": "hello"
+        },
+        {
+          "id": 1757864821405,
           "text": "hello"
         }
       ]
@@ -25,7 +29,7 @@
       "channelId": 2,
       "views": "85K",
       "likes": 221,
-      "liked": true,
+      "liked": false,
       "time": "5 days ago",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1400/1*cALcoJD59iD-hzy0vQWVkQ.jpeg",
       "comments": []
@@ -202,7 +206,7 @@
       "id": "1",
       "name": "AI Academy",
       "subscribers": "15.2K",
-      "subscribed": true
+      "subscribed": false
     },
     {
       "id": "2",

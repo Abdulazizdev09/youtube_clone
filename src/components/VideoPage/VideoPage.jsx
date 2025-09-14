@@ -1,7 +1,7 @@
 import { ThumbUpAlt, ThumbUpOffAlt } from '@mui/icons-material'
 import { Box } from '@mui/material'
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 function VideoPage() {
@@ -25,12 +25,14 @@ function VideoPage() {
                 setChannel(res.data)
                 setSubscribed(res.data.subscribed)
             })
+            .catch(() => setError("Failed to load video or channel"))
     }, [id])
 
     const handleSubscribe = () => {
         if (!channel) return
         const updatedChannel = { ...channel, subscribed: !subscribed }
         axios.put(`http://localhost:4000/channels/${channel.id}`, updatedChannel)
+            .catch(() => setError("Failed to update subscription"))
         setChannel(updatedChannel)
         setSubscribed(!subscribed)
     }
@@ -39,7 +41,8 @@ function VideoPage() {
         if (!video) return;
         const updateVideo = { ...video, liked: !liked };
         axios.put(`http://localhost:4000/videos/${id}`, updateVideo)
-            .then(() => setVideo(updateVideo));
+            .then(() => setVideo(updateVideo))
+            .catch(() => setError("Failed to update like"))
         setLiked(!liked);
     };
 
@@ -58,11 +61,14 @@ function VideoPage() {
                 setVideo(res.data);
                 setComments(res.data.comments);
                 setNewComment("");
-            });
+            })
+            .catch(() => setError("Failed to add comment"))
     };
 
-    if (!video || !channel) return <p className="text-white">Loading...</p>
 
+    if (error) return <p className="text-red-500 text-lg">{error}</p>
+    if (!video || !channel) return <p className="text-white">Loading...</p>
+    
     return (
         <Box sx={{ width: "100%", paddingTop: "63px", color: "white" }}>
             <div className='w-[900px]  '>
@@ -130,4 +136,4 @@ function VideoPage() {
     )
 }
 
-export default VideoPage
+export default VideoPage;

@@ -5,6 +5,7 @@ import VideoCards from '../VideoCards/VideoCards'
 function Home() {
   return (
     <VideoCards />
+    
   )
 }
 
